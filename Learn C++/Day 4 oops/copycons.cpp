@@ -9,7 +9,6 @@ public:
     int servings;
     vector<string> ingredients;
 
-    //parameter contructor
     Chai(string name, int serve, vector<string> ingr){
         teaName = new string(name);
         servings = serve;
@@ -47,7 +46,6 @@ int main(){
     Chai lemonTea("Lemon Tea", 2, {"Water", "lemon", "Honey"});
     //lemonTea.displayChaiDetails();
 
-    //copy the object
     Chai copiedChai = lemonTea;
     //copiedChai.displayChaiDetails();
 

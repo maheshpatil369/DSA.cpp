@@ -9,7 +9,6 @@ public:
     int servings;
     vector<string> ingredients;
 
-    //default contructor
     Chai(){
         teaName = "Unknow Tea";
         servings = 1;
