@@ -2,7 +2,6 @@
 #include <climits>
 using namespace std;
 
-// Function to find minimum element
 int getMin(int num[], int n) {
     int mini = INT_MAX;
 
@@ -13,7 +12,6 @@ int getMin(int num[], int n) {
     return mini;
 }
 
-// Function to find maximum element
 int getMax(int num[], int n) {
     int maxi = INT_MIN;
 
