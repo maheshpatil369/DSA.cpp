@@ -1,176 +1,340 @@
-You are a Senior Staff Frontend Engineer and Technical Interviewer at Google, Amazon, Microsoft, Meta, Atlassian, or Razorpay.
+# 🚀 DSA C++ Learning Journey
 
-I have a Frontend Developer interview today.
+This repository contains my Data Structures and Algorithms (DSA) practice in C++.
 
-Your job is to prepare me for cracking the interview.
+The goal is to build strong problem-solving skills, understand patterns, and solve LeetCode-style problems.
 
-For every topic:
+---
 
-1. Ask the interview question.
-2. Give the BEST interview answer (not textbook).
-3. Explain why that answer is correct.
-4. Mention common mistakes candidates make.
-5. Ask one follow-up question.
-6. Give the expected follow-up answer.
-7. Rate the difficulty (Easy/Medium/Hard).
-8. Tell me if it is commonly asked in product-based companies.
+# 📚 Progress Tracker
 
-Cover every important topic in depth:
+## ✅ Basics of C++
 
-## HTML
-- Semantic HTML
-- Accessibility
-- SEO
-- Forms
-- Local Storage vs Session Storage vs Cookies
-- DOM
+Folder:
 
-## CSS
-- Box Model
-- Flexbox
-- Grid
-- Position
-- Specificity
-- Responsive Design
-- Media Queries
-- CSS Variables
-- Animations
+```
+Learn C++
+```
 
-## JavaScript
-- var, let, const
-- Scope
-- Hoisting
-- Closures
-- Event Loop
-- Call Stack
-- Callback
-- Promise
-- async/await
-- this keyword
-- bind/call/apply
-- Prototype
-- Prototype Inheritance
-- Event Delegation
-- Debouncing
-- Throttling
-- Memory Leaks
-- Garbage Collection
-- map/filter/reduce
-- Spread/Rest
-- Destructuring
+Topics Covered:
 
-## TypeScript
-- Interfaces
-- Types
-- Generics
-- Enums
-- Utility Types
+- Variables
+- Data Types
+- Conditions
+- Loops
+- Functions
+- Arrays
+- Basic C++ Syntax
+- Object Oriented Programming Basics
 
-## React
-- Virtual DOM
-- Reconciliation
-- Functional Components
-- JSX
-- Props
-- State
-- Hooks
-- useState
-- useEffect
-- useRef
-- useMemo
-- useCallback
-- useContext
-- Custom Hooks
-- React.memo
-- Controlled vs Uncontrolled Components
-- Lifting State Up
-- Context API
-- Redux Toolkit
-- React Router
-- Lazy Loading
-- Suspense
-- Code Splitting
-- Error Boundaries
-- Performance Optimization
 
-## Node.js
-- Event Loop
-- Non-blocking I/O
-- Express
-- Middleware
-- REST APIs
-- JWT
-- Authentication
-- Authorization
-- CORS
-- Environment Variables
-- File Upload
-- Error Handling
+Progress:
 
-## MongoDB
-- Collections
-- Documents
-- Schema
-- Indexing
-- Aggregation
-- populate()
+```
+██████████ 100%
+```
 
-## Git
-- Branching
-- Merge
-- Rebase
-- Stash
-- Cherry-pick
+---
 
-## REST APIs
-- GET
-- POST
-- PUT
-- PATCH
-- DELETE
-- Status Codes
-- Authentication
-- Pagination
-- Filtering
-- Sorting
+# 🧩 Data Structures & Algorithms
 
-Include at least 100 real interview questions.
+## 1. Arrays
 
-Also include scenario-based questions such as:
+Folder:
 
-- API takes 20 seconds.
-- React component renders multiple times.
-- Backend server is down.
-- Authentication token expires.
-- Render one million records.
-- Search optimization.
-- Infinite scrolling.
-- Memory leaks.
-- Bundle size optimization.
-- Large image optimization.
-- Offline support.
-- Caching strategy.
-- Race conditions.
-- WebSocket integration.
-- Real-time notifications.
-- Dark mode implementation.
-- Role-based authentication.
-- Refresh token flow.
-- File upload.
-- Optimistic UI updates.
-- Pagination vs Infinite Scroll.
-- React Query.
-- Redux Toolkit.
-- SSR vs CSR vs SSG.
-- Hydration.
-- Accessibility improvements.
-- Cross-browser compatibility.
+```
+DSA/Array
+```
 
-For every scenario:
-- Explain the approach.
-- Explain why.
-- Mention alternative solutions.
-- Mention trade-offs.
-- Mention interviewer expectations.
+Topics:
 
-Finally, ask me a complete mock interview exactly like a Senior Frontend Engineer would, one question at a time. Wait for my answer, evaluate it, provide feedback, then continue.
+- Array traversal
+- Searching
+- Sorting basics
+- Prefix Sum
+- Two Pointer techniques
+
+Status:
+
+```
+In Progress
+```
+
+---
+
+# 2. Two Pointers Pattern
+
+Folder:
+
+```
+DSA/Pattern: Two Pointers
+```
+
+Concept:
+
+Two pointers technique is used to solve problems where we maintain two indexes and move them based on conditions.
+
+Examples:
+
+- Pair Sum
+- Removing duplicates
+- Reverse array/string
+
+
+Status:
+
+```
+Completed Basics ✅
+```
+
+---
+
+# 3. Sliding Window Pattern ⭐
+
+Folder:
+
+```
+DSA/Sliding Window
+```
+
+Sliding Window is one of the most important interview patterns.
+
+The idea:
+
+Instead of checking every possible subarray/substring, maintain a moving window using two pointers.
+
+```
+left  ---> Window <--- right
+```
+
+---
+
+## Problems Solved
+
+### ✅ Fruit Into Basket
+
+Concept:
+
+- Longest subarray with at most 2 different fruits
+- Frequency counting
+- Variable size window
+
+
+---
+
+### ✅ Longest Substring With K Uniques
+
+Concept:
+
+- Maintain character frequency
+- Expand window
+- Shrink when condition breaks
+
+
+---
+
+### ✅ Maximum Sum Subarray of Size K
+
+Concept:
+
+Fixed size sliding window.
+
+Example:
+
+```
+[1 2 3] 4 5
+
+Window size = 3
+```
+
+Remove old element and add new element.
+
+
+---
+
+### ✅ Minimum Size Subarray Sum
+
+Concept:
+
+Find smallest window whose sum is greater than or equal to target.
+
+
+---
+
+### ✅ Minimum Window Substring ⭐
+
+LeetCode 76
+
+Concepts learned:
+
+- Sliding Window
+- Frequency Array
+- Two Pointer
+- Character counting
+
+
+Important Logic:
+
+```
+Expand window using right pointer
+
+↓
+
+Window becomes valid
+
+↓
+
+Shrink window using left pointer
+
+↓
+
+Store minimum answer
+```
+
+Status:
+
+```
+Completed ✅
+```
+
+---
+
+# Sliding Window Template
+
+Most problems follow this pattern:
+
+```cpp
+int left = 0;
+
+for(int right = 0; right < n; right++)
+{
+
+    // Add element to window
+
+
+    while(condition)
+    {
+
+        // Remove element from window
+
+        left++;
+
+    }
+
+    // Update answer
+}
+```
+
+---
+
+# Current Learning Roadmap
+
+```
+✅ C++ Basics
+
+✅ Arrays Basics
+
+✅ Two Pointer Pattern
+
+🔄 Sliding Window Pattern
+
+⬜ Stack
+
+⬜ Queue
+
+⬜ Linked List
+
+⬜ Recursion
+
+⬜ Backtracking
+
+⬜ Binary Search
+
+⬜ Trees
+
+⬜ Graphs
+
+⬜ Dynamic Programming
+```
+
+---
+
+# LeetCode Progress
+
+## Sliding Window Problems
+
+| Problem | Status |
+|---|---|
+| Fruit Into Basket | ✅ |
+| Longest Substring With K Unique Characters | ✅ |
+| Maximum Sum Subarray Size K | ✅ |
+| Minimum Size Subarray Sum | ✅ |
+| Minimum Window Substring | ✅ |
+
+---
+
+# Important Patterns Learned
+
+## Two Pointer
+
+Used when:
+
+- Array/String is sorted
+- Need pair comparison
+- Need left and right movement
+
+
+## Sliding Window
+
+Used when:
+
+- Finding longest/shortest substring
+- Finding continuous subarray
+- Need frequency/count tracking
+
+
+---
+
+# Repository Structure
+
+```
+DSA.CPP
+│
+├── DSA
+│   │
+│   ├── Array
+│   │
+│   ├── Pattern: Two Pointers
+│   │
+│   ├── Sliding Window
+│       │
+│       ├── Fruit into Basket
+│       ├── Longest Substring with K Uniques
+│       ├── Max Sum Subarray of Size K
+│       ├── Minimum Size Subarray Sum
+│       └── Minimum Window Substring
+│
+└── Learn C++
+    │
+    ├── Day 1
+    ├── Day 2
+    ├── Day 3 (Conditional)
+    ├── Day 4 OOPS
+    ├── Day 5 Arrays
+    └── Day 6 Functions
+```
+
+---
+
+# Goal 🎯
+
+- Solve DSA problems consistently
+- Understand patterns instead of memorizing solutions
+- Improve problem-solving skills
+- Prepare for coding interviews
+
+---
+
+## Daily Progress
+
+Keep learning. Keep solving. 🚀
